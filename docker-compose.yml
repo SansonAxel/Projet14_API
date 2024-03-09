@@ -16,7 +16,7 @@ services:
       - projet14
 
   phpmyadmin:
-    image: adminer
+    image: phpmyadmin
     container_name: adminer_projet14
     restart: always
     depends_on:
