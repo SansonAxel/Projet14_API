@@ -42,8 +42,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      * min=14, minMessage="Le mot de passe doit contenir au moins {{ limit }} caractères."
      * )
      * @Assert\Regex(
-     * pattern: "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&()\-_+={}[\]:;,<.>])[A-Za-z\d@$!%*?&()\-_+={}[\]:;,<.>]{14,}$/",
-     * message: "Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial."
+     *     pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{14,}$/",
+     *     message="Le mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial."
      * )
      * @Groups({"user" , "structuresUser"})
      */
